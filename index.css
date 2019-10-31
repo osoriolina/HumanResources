@@ -1,0 +1,39 @@
+.bg__color{
+    height: 70px;
+    border: 2px solid #dfe2e6;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    text-align: right;
+    margin-top: 50px;
+}
+
+.zoom__properties {
+    background-color: #75BEDB;
+    border: none;
+}
+
+.pencil__properties {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.trash__properties {
+    background-color: #CA5C54;
+    border: none;
+}
+
+.searchBar__properties {
+    background-color: white !important;
+}
+
+.btn_add_employee{
+    background-color: #75BEDB;
+    border: none;
+    margin-top: 15px;
+
+}
+
+.first__row__properties {
+    padding: 12px;
+}
