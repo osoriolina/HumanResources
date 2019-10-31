@@ -6,7 +6,7 @@ let allEmployees = [];
 function getEmployees() {
     $.ajax({
         "type": "GET",
-        "url": "https://cors-anywhere.herokuapp.com/http://prana-solutions.com/neoland/ecommerce/?getEmployees=1", 
+        "url": "http://dummy.restapiexample.com/api/v1/employees", 
         "dataType": "json",
         "headers" : {"Content-Type": "application/json", "X-Requested-With" : "XMLHttpRequest"},
         "success" : (data) => {printEmployees(data)}, 
@@ -238,14 +238,13 @@ function printEmployees(objEmployees) {
 }); 
 
 
-
     $('.btn_save_changes').on('click',function () {
             //editInfoEmployee();
             //let dataId = $('.add_id').val();//
             let name = $('.add_name').val();//
             let age = $('.add_age').val();//
             let salary = $('.add_salary').val();//
-            let objEmployee = {employee_name:name, employee_age:age, employee_salary:salary};
+            let objEmployee = {name:name, age:age, salary:salary};
             console.log(objEmployee)
             addEmployee(objEmployee);
         
